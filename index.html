@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小红书号:qO_w_Op</title>
+    <style type="text/css">
+        html,body{width:100%;height:100%;margin:0;padding:0;}
+        body{
+        background: -webkit-linear-gradient(left,rgba(89,114,192,0.8),rgba(89,114,192,0.2));
+        background: -o-linear-gradient(right,rgba(89,114,192,0.8),rgba(89,114,192,0.2));
+        background: -moz-linear-gradient(right,rgba(89,114,192,0.8),rgba(89,114,192,0.2));
+        background: linear-gradient(to right, rgba(89,114,192,0.8), rgba(89,114,192,0.2));
+        background-size: 400% 400%;
+        animation: gradientBG 5s ease infinite;}
+        @keyframes gradientBG {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+    </style>
+    <!--背景渐变效果样式代码结束（可忽略）-->
+
+
+    <style type="text/css">
+        /* 全模块定位和总布局 用定位top/left,没有margin但不脱标调位置 */
+
+        .container1 {
+            position: relative;
+            top: 100px
+            ;
+            left: 100px
+            ;
+        }
+
+        /* 主要用来装功能块在容器内保证定位 相当于该功能块的padding*/
+
+        .container1 .wrap {
+            width: 100px;
+            height: 100px;
+            top: 150px;
+            left: 150px;
+            margin: 0;
+        }
+
+        /* 功能块 */
+
+        .container1 .wrap .cube {
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            /* perspective: 500px; */
+            transform: rotateX(-30deg) rotateY(-80deg);
+            animation: ziZhuan linear 20s infinite;
+            animation-direction: alternate-reverse;
+            transition: all 0.5s;
+        }
+
+        @keyframes ziZhuan {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .container1 .wrap .cube div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 183, 255);
+            z-index: -1;
+            transition: all 0.5s;
+            opacity: 0.8;
+            outline: rgb(40, 226, 240) solid thick;
+            box-shadow: rgba(17, 123, 194, 0.712) 0 0 50px 50px;
+        }
+
+        .container1 .wrap .cube div img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container1 .wrap .cube span {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            display: block;
+            width: 100px;
+            height: 100px;
+            outline: rgba(21, 40, 211, 0.664) solid thin;
+            background-color: rgba(11, 96, 224, 0.235);
+        }
+
+        .container1 .wrap .cube span img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container1 .wrap .cube .out-front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        .container1 .wrap .cube .out-back {
+            transform: translateZ(-100px);
+        }
+
+        /* //y正方向逆时针 */
+
+        .container1 .wrap .cube .out-left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .container1 .wrap .cube .out-right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        /*  x->正-上*/
+
+        .container1 .wrap .cube .out-top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .container1 .wrap .cube .out-bottom {
+            background-color: rgba(36, 238, 80, 0.6);
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .container1 .wrap .cube .in-left {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .container1 .wrap .cube .in-right {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .container1 .wrap .cube .in-back {
+            transform: translateZ(-50px);
+        }
+
+        .container1 .wrap .cube .in-front {
+            transform: translateZ(50px);
+        }
+
+        .container1 .wrap .cube .in-top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .container1 .wrap .cube .in-bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+
+        .container1 .wrap .cube:hover .out-front {
+            transform: rotateY(0deg) translateZ(200px);
+        }
+
+        .container1 .wrap .cube:hover .out-back {
+            transform: rotateY(0deg) translateZ(-200px);
+        }
+
+        .container1 .wrap .cube:hover .out-top {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+
+        .container1 .wrap .cube:hover .out-bottom {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+
+        .container1 .wrap .cube:hover .out-right {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+
+        .container1 .wrap .cube:hover .out-left {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+
+        .auhtor {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 20;
+            font-weight: 600;
+            background-image: -webkit-linear-gradient(60deg, #E21143, #FFB03A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+      <!--定义底部承载游动小鱼特效的div样式开始-->
+      <style type="text/css">
+        .container{
+        margin:0;
+        padding:0;
+        background-color:transparent;
+        width:100%;
+        height:200px;
+        z-index:-1;
+        position:fixed;
+        bottom:0;
+        left:0;}
+    </style>
+    
+</head>
+
+<body>
+    <script src="./jquery.min.js"></script>
+      <!--核心特效定义js-->
+	<script src='./fish.js'></script>
+               <!--承载游动小鱼特效的div容器-->
+    <div id="jsi-flying-fish-container" class="container">   </div>
+    <div class="container1">
+  
+        <audio autoplay="autoplay" controls loop="loop" src="http://music.163.com/song/media/outer/url?id=2042245634.mp3" id="bgmusic">
+        </audio>
+        <div class="wrap">
+            <div class="cube">
+                <div class="out-front">
+                    <img src="https://live.staticflickr.com/65535/52909223996_28abe3b69f_b.jpg" alt="">
+                </div>
+                <div class="out-back">
+                    <img src="https://live.staticflickr.com/65535/52909376429_394f686783_b.jpg" alt="">
+                </div>
+                <div class="out-left">
+                    <img src="https://live.staticflickr.com/65535/52909376309_275c8abd5b_b.jpg" alt="">
+                </div>
+                <div class="out-right">
+                    <img src="https://live.staticflickr.com/65535/52909376339_44320b27e8_b.jpg" alt="">
+                </div>
+                <div class="out-top">
+                    <img src="https://live.staticflickr.com/65535/52909223886_1ca0d93243_b.jpg" alt="">
+                </div>
+                <div class="out-bottom">
+                    <img src="https://live.staticflickr.com/65535/52909677923_0d8a30f7f9_b.jpg" alt="">
+                </div>
+
+                <span class="in-front">
+                    <img src="https://live.staticflickr.com/65535/52908650232_1faf1e7cd1_h.jpg" alt="">
+                </span>
+                <span class="in-back">
+                    <img src="https://live.staticflickr.com/65535/52908650192_c35e111335_h.jpg" alt="">
+                </span>
+                <span class="in-left">
+                    <img src="https://live.staticflickr.com/65535/52909224576_9ab56eff1a_h.jpg" alt="">
+                </span>
+                <span class="in-right">
+                    <img src="https://live.staticflickr.com/65535/52909376879_33fc8c869d_h.jpg" alt="">
+                </span>
+                <span class="in-top">
+                    <img src="https://live.staticflickr.com/65535/52909679368_84ebfc0752_h.jpg" alt="">
+                </span>
+                <span class="in-bottom">
+                    <img src="https://live.staticflickr.com/65535/52909679213_7e10508944_h.jpg" alt="">
+                </span>
+
+
+
+            </div>
+        </div>
+        <div class="auhtor">꒰ঌ🤍໒꒱原创 献给小伙伴们！</div>
+ 
+    </div>
+    
+
+  
+    <script>
+        //数据修改
+        $(function () {
+            //获取默认尺寸
+            var outWidth = $(" .container1 .wrap .cube div").width();
+            var inWidth = $(" .container1 .wrap .cube span").width();
+            var inOffset = 0.25 * outWidth;
+            var outOffset = 0.5 * outWidth;
+            //修改尺寸  okk但offset还要改
+            function set(outWidth, inWidth) {
+                inWidth = inWidth || 0.5 * outWidth;
+                $(" .container1 .wrap .cube div").width(outWidth);
+                $(" .container1 .wrap .cube span").width(inWidth);
+
+            }
+        })
+        function toggleSound() {
+            var music = document.getElementById("bgmusic");//获取ID
+                console.log(music);
+                console.log(music.paused);
+            if (music.paused) { //判读是否播放
+                music.paused=false;
+                music.play(); //没有就播放
+            }
+
+        }
+setInterval("toggleSound()",1);
+    </script>
+
+</body>
+
+
+</html>
